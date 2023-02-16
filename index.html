@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/07d53b303e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <form id="form">
+          <input
+            id="searchBox"
+            type="text"
+            class="input"
+            name="txt"
+            onmouseout="this.value = ''; this.blur();"
+          />
+        </form>
+      </div>
+      <div class="container" id="card">
+        <div class="avatar">
+          <img src="User-avatar.svg.png" alt="" id="avatar" />
+        </div>
+        <div class="username">
+          <p id="username">USER</p>
+        </div>
+        <div class="user-profile">
+          <p id="userProfile">@USER</p>
+        </div>
+        <div class="user-bio">
+          <p id="userBio"></p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <p><i class="fa-sharp fa-solid fa-users"></i> Followers</p>
+            <p id="userFollowers"></p>
+          </div>
+          <hr />
+
+          <div class="stat">
+            <p><i class="fa-solid fa-people-arrows"></i> Following</p>
+            <p id="userFollowing"></p>
+          </div>
+          <hr />
+          <div class="stat">
+            <p><i class="fa-solid fa-code"></i> Repos</p>
+            <p id="userRepos"></p>
+          </div>
+        </div>
+        <div class="profile-div">
+          <p class="profile">
+            <a href="#" id="profile" target="_blank"
+              ><i class="fa-sharp fa-solid fa-user-plus"></i> Go to profile on
+              GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
